@@ -20,7 +20,7 @@ const Footer = () => {
               <ul className="text-slate-300">
                 <li>
                   <a
-                    href="#"
+                    href="https://herisetiawan.vercel.app"
                     className="inline-block text-base hover:text-primary mb-3"
                   >
                     Programming
@@ -28,7 +28,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://herisetiawan.vercel.app"
                     className="inline-block text-base hover:text-primary mb-3"
                   >
                     Tech
@@ -36,7 +36,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://herisetiawan.vercel.app"
                     className="inline-block text-base hover:text-primary mb-3"
                   >
                     Health

@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://heriswn.vercel.app`,
   },
   plugins: [
     "gatsby-plugin-postcss",

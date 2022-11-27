@@ -3,26 +3,28 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Backtotop from "../components/backtotop";
 
 const IndexPage = () => {
   return (
     <main>
       <Header />
       {/* Hero Section Start */}
-      <section id="home" className="pt-36">
+      <section id="home" className="pt-36 dark:bg-dark">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full  self-center px-4 lg:w-1/2">
               <h1 className="text-base font-semibold text-primary">
                 Hallo Semua 👋, saya{" "}
-                <span className="block font-bold text-dark text-4xl mt-1 md:text-xl">
+                <span className="mt-1 block text-4xl font-bold text-dark dark:text-white md:text-xl">
                   Heri Setiawan
                 </span>
               </h1>
-              <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-                Marketing Planner, <span className="text-dark">SCTV</span>
+              <h2 className="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+                Marketing Planner,{" "}
+                <span className="text-dark dark:text-white">SCTV</span>
               </h2>
-              <p className="font-medium text-secondary mb-10 leading-relaxed">
+              <p className="mb-10 font-medium leading-relaxed text-secondary">
                 I've experience in Marketing Analyst and Marketing Planner with
                 a demonstrated history of working in the broadcast media
                 industry (GTV and SCTV). Skilled in Data Analysis, VBA Excel,
@@ -30,19 +32,19 @@ const IndexPage = () => {
                 University, with degrees from their mathematics department.
               </p>
               <Link to="#">
-                <span className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                <span className="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-90 hover:shadow-lg">
                   Email
                 </span>
               </Link>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
-              <div className="relative mt-10 lg:mt-9 lg:right-0">
+              <div className="relative mt-10 lg:right-0 lg:mt-9">
                 <StaticImage
                   src="../images/clip.png"
                   alt="Heri Setiawan"
-                  className="max-w-full mx-auto"
+                  className="relative z-10 mx-auto max-w-full"
                 />
-                <span className="absolute bottom-20 -z-10 left-1/2 -translate-x-1/3 md:scale-125">
+                <span className="absolute bottom-20 left-1/2 -translate-x-1/3 md:scale-125">
                   <svg
                     width={500}
                     height={500}
@@ -64,17 +66,17 @@ const IndexPage = () => {
       {/* Hero Section End */}
 
       {/* About Section Start */}
-      <section id="about" className="pt-36 pb-32">
+      <section id="about" className="pt-36 pb-32 dark:bg-dark">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="w-full px-4 mb-10 lg:w-1/2">
-              <h4 className="font-bold uppercase text-primary text-lg mb-3">
+            <div className="mb-10 w-full px-4 lg:w-1/2">
+              <h4 className="mb-3 text-lg font-bold uppercase text-primary">
                 Tentang Saya
               </h4>
-              <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+              <h2 className="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">
                 Marketing Planner, SCTV
               </h2>
-              <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              <p className="max-w-xl text-base font-medium text-secondary lg:text-lg">
                 Philanthropically I focus on personal privacy. Did you know that
                 your digital track record can be known by several parties, and
                 take advantage of it? Here are Simple Steps to Protect Your
@@ -84,22 +86,22 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="w-full px-4 lg:w-1/2">
-              <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">
+              <h3 className="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">
                 Follow Me!!!
               </h3>
-              <p className="font-medium text-base text-secondary mb-6 lg:text-lg">
+              <p className="mb-6 text-base font-medium text-secondary lg:text-lg">
                 I've experience in Marketing Analyst and Marketing Planner with
                 a demonstrated history of working in the broadcast media
                 industry (GTV and SCTV). Skilled in Data Analysis, VBA Excel,
                 Python, and Microsoft Office. Before that I was at Padjadjaran
                 University, with degrees from their mathematics department.
               </p>
-              <div className="flex item-center">
+              <div className="item-center flex">
                 {/* Youtube */}
                 <a
                   href="youtube.com"
                   target={"_blank"}
-                  className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     role="img"
@@ -116,7 +118,7 @@ const IndexPage = () => {
                 <a
                   href="instagram.com"
                   target={"_blank"}
-                  className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     role="img"
@@ -133,7 +135,7 @@ const IndexPage = () => {
                 <a
                   href="twitter.com"
                   target={"_blank"}
-                  className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     role="img"
@@ -150,7 +152,7 @@ const IndexPage = () => {
                 <a
                   href="facebook.com"
                   target={"_blank"}
-                  className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   <svg
                     role="img"
@@ -171,17 +173,20 @@ const IndexPage = () => {
       {/* About Section End */}
 
       {/* Portfolio Section Start */}
-      <section id="portfolio" className="pt-36 pb-16 bg-slate-100">
+      <section
+        id="portfolio"
+        className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
+      >
         <div className="container">
           <div className="w-full px-4">
-            <div className="max-w-xl mx-auto text-center mb-16">
-              <h4 className="font-semibold text-lg text-primary mb-2">
+            <div className="mx-auto mb-16 max-w-xl text-center">
+              <h4 className="mb-2 text-lg font-semibold text-primary">
                 Portfolio
               </h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
                 Project Terbaru
               </h2>
-              <p className="font-medium text-md text-secondary md:text-lg">
+              <p className="text-md font-medium text-secondary md:text-lg">
                 Et officia duis nisi aute et sint excepteur minim reprehenderit
                 ea in nisi elit nisi. Lorem sint laboris sint tempor sit aliquip
                 deserunt eiusmod do eiusmod mollit commodo. Ut tempor deserunt
@@ -195,19 +200,19 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+          <div className="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
             <div className="mb-12 p-4 md:w-1/2">
-              <div className="rounded-md shadow-md overflow-hidden">
+              <div className="overflow-hidden rounded-md shadow-md">
                 <StaticImage
                   src="../images/portfolio/1.png"
                   alt="Landing Page Heri Setiawan"
                   className="w-full"
                 />
               </div>
-              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 className="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
                 Landing Page Heri Setiawan
               </h3>
-              <p className="font-medium text-base text-secondary">
+              <p className="text-base font-medium text-secondary">
                 Aliquip exercitation irure non ad dolor proident anim laborum
                 occaecat velit eiusmod. Tempor enim non adipisicing occaecat
                 irure est culpa. Sint consequat pariatur id eiusmod duis laboris
@@ -219,17 +224,17 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
-              <div className="rounded-md shadow-md overflow-hidden">
+              <div className="overflow-hidden rounded-md shadow-md">
                 <StaticImage
                   src="../images/portfolio/2.png"
                   alt="E-Commerce"
                   className="w-full"
                 />
               </div>
-              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 className="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
                 E-Commerce
               </h3>
-              <p className="font-medium text-base text-secondary">
+              <p className="text-base font-medium text-secondary">
                 Aliquip exercitation irure non ad dolor proident anim laborum
                 occaecat velit eiusmod. Tempor enim non adipisicing occaecat
                 irure est culpa. Sint consequat pariatur id eiusmod duis laboris
@@ -241,17 +246,17 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
-              <div className="rounded-md shadow-md overflow-hidden">
+              <div className="overflow-hidden rounded-md shadow-md">
                 <StaticImage
                   src="../images/portfolio/3.png"
                   alt="document"
                   className="w-full"
                 />
               </div>
-              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 className="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
                 Document
               </h3>
-              <p className="font-medium text-base text-secondary">
+              <p className="text-base font-medium text-secondary">
                 Aliquip exercitation irure non ad dolor proident anim laborum
                 occaecat velit eiusmod. Tempor enim non adipisicing occaecat
                 irure est culpa. Sint consequat pariatur id eiusmod duis laboris
@@ -263,17 +268,17 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
-              <div className="rounded-md shadow-md overflow-hidden">
+              <div className="overflow-hidden rounded-md shadow-md">
                 <StaticImage
                   src="../images/portfolio/4.png"
                   alt="Tribut Page"
                   className="w-full"
                 />
               </div>
-              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 className="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
                 Tribut Page
               </h3>
-              <p className="font-medium text-base text-secondary">
+              <p className="text-base font-medium text-secondary">
                 Aliquip exercitation irure non ad dolor proident anim laborum
                 occaecat velit eiusmod. Tempor enim non adipisicing occaecat
                 irure est culpa. Sint consequat pariatur id eiusmod duis laboris
@@ -290,17 +295,20 @@ const IndexPage = () => {
       {/* Portfolio Section End */}
 
       {/* Clients Section Start */}
-      <section id="clients" className="pt-36 pb-32 bg-slate-800">
+      <section
+        id="clients"
+        className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300"
+      >
         <div className="container">
           <div className="w-full px-4">
-            <div className="max-w-xl mx-auto text-center mb-16">
-              <h4 className="font-semibold text-lg text-primary mb-2">
+            <div className="mx-auto mb-16 max-w-xl text-center">
+              <h4 className="mb-2 text-lg font-semibold text-primary">
                 Clients
               </h4>
-              <h2 className="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+              <h2 className="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">
                 Experience
               </h2>
-              <p className="font-medium text-md text-secondary md:text-lg">
+              <p className="text-md font-medium text-secondary md:text-lg">
                 Duis pariatur incididunt do fugiat pariatur commodo
                 reprehenderit occaecat nostrud id ex ex.
               </p>
@@ -308,39 +316,39 @@ const IndexPage = () => {
 
             <div className="w-full px-4">
               <div className="flex flex-wrap items-center justify-center">
-                <a href="#">
+                <a href="https://herisetiawan.vercel.app">
                   <StaticImage
                     src="../images/clients/google.svg"
                     alt="google"
-                    className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
                   />
                 </a>
-                <a href="#">
+                <a href="https://herisetiawan.vercel.app">
                   <StaticImage
                     src="../images/clients/gojek.svg"
                     alt="gojek"
-                    className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
                   />
                 </a>
-                <a href="#">
+                <a href="https://herisetiawan.vercel.app">
                   <StaticImage
                     src="../images/clients/gtv.svg"
                     alt="gtv"
-                    className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
                   />
                 </a>
-                <a href="#">
+                <a href="https://herisetiawan.vercel.app">
                   <StaticImage
                     src="../images/clients/sctv.svg"
                     alt="sctv"
-                    className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
                   />
                 </a>
-                <a href="#">
+                <a href="https://herisetiawan.vercel.app">
                   <StaticImage
                     src="../images/clients/tokopedia.svg"
                     alt="tokopedia"
-                    className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
                   />
                 </a>
               </div>
@@ -351,15 +359,15 @@ const IndexPage = () => {
       {/* Clients Section End */}
 
       {/* Blog Section Start */}
-      <section id="blog" className="pt-36 pb-32 bg-slate-100">
+      <section id="blog" className="bg-slate-100 pt-36 pb-32 dark:bg-dark">
         <div className="container">
           <div className="w-full px-4">
-            <div className="max-w-xl mx-auto text-center mb-16">
-              <h4 className="font-semibold text-lg text-primary mb-2">Blog</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+            <div className="mx-auto mb-16 max-w-xl text-center">
+              <h4 className="mb-2 text-lg font-semibold text-primary">Blog</h4>
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
                 Blog Terbaru
               </h2>
-              <p className="font-medium text-md text-secondary md:text-lg">
+              <p className="text-md font-medium text-secondary md:text-lg">
                 Nostrud est sint officia ea sit deserunt id laboris sint in enim
                 ipsum officia.
               </p>
@@ -367,22 +375,22 @@ const IndexPage = () => {
 
             <div className="flex flex-wrap">
               <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div className="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
                   <StaticImage
-                    src="https://source.unplash.com/360x200?programming"
+                    src="../images/portfolio/1.png"
                     alt="programming"
                     className="w-full"
                   />
                   <div className="py-8 px-6">
-                    <h3 className="mb-3 font-semibold text-xl text-dark trancate">
+                    <h3 className="trancate mb-3 text-xl font-semibold text-dark dark:text-white">
                       Tips Coding
                     </h3>
-                    <p className="font-medium text-base text-secondary mb-6">
+                    <p className="mb-6 text-base font-medium text-secondary">
                       Qui labore duis aute irure adipisicing.
                     </p>
                     <a
-                      href="#"
-                      className="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                      href="https://herisetiawan.vercel.app"
+                      className="rounded-md bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80"
                     >
                       Read more
                     </a>
@@ -390,22 +398,22 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div className="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
                   <StaticImage
-                    src="https://source.unplash.com/360x200?mechanical+keyboard"
+                    src="../images/portfolio/1.png"
                     alt="keyboard"
                     className="w-full"
                   />
                   <div className="py-8 px-6">
-                    <h3 className="mb-3 font-semibold text-xl text-dark trancate">
+                    <h3 className="trancate mb-3 text-xl font-semibold text-dark dark:text-white">
                       Review Keyboard
                     </h3>
-                    <p className="font-medium text-base text-secondary mb-6">
+                    <p className="mb-6 text-base font-medium text-secondary">
                       Qui labore duis aute irure adipisicing.
                     </p>
                     <a
-                      href="#"
-                      className="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                      href="https://herisetiawan.vercel.app"
+                      className="rounded-md bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80"
                     >
                       Read more
                     </a>
@@ -413,22 +421,22 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                <div className="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
                   <StaticImage
-                    src="https://source.unplash.com/360x200?coffee"
+                    src="../images/portfolio/1.png"
                     alt="cofee"
                     className="w-full"
                   />
                   <div className="py-8 px-6">
-                    <h3 className="mb-3 font-semibold text-xl text-dark trancate">
+                    <h3 className="trancate mb-3 text-xl font-semibold text-dark dark:text-white">
                       Coffee
                     </h3>
-                    <p className="font-medium text-base text-secondary mb-6">
+                    <p className="mb-6 text-base font-medium text-secondary">
                       Qui labore duis aute irure adipisicing.
                     </p>
                     <a
-                      href="#"
-                      className="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-80"
+                      href="https://herisetiawan.vercel.app"
+                      className="rounded-md bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80"
                     >
                       Read more
                     </a>
@@ -442,19 +450,26 @@ const IndexPage = () => {
       {/* Blog Section End */}
 
       {/* Contact Section Start */}
-      <section id="contact" className="pt-36 pb-32">
+      <section id="contact" className="pt-36 pb-32 dark:bg-slate-800">
         <div className="container">
           <div className="w-full px-4">
-            <div className="max-w-xl mx-auto text-center mb-16">
-              <h4 className="font-semibold text-lg text-primary mb-2">Contact</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Email me</h2>
-              <p className="font-medium text-md text-secondary md:text-lg">Amet nulla est nisi dolor esse.</p>
+            <div className="mx-auto mb-16 max-w-xl text-center">
+              <h4 className="mb-2 text-lg font-semibold text-primary ">
+                Contact
+              </h4>
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+                Email me
+              </h2>
+              <p className="text-md font-medium text-secondary md:text-lg">
+                Amet nulla est nisi dolor esse.
+              </p>
             </div>
           </div>
         </div>
       </section>
       {/* Contact Section End */}
       <Footer />
+      <Backtotop />
     </main>
   );
 }

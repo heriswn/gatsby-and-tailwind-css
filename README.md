@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Gatsby Tailwind CSS starter
 </h1>
 
 ## 🚀 Quick start
@@ -15,7 +15,7 @@
 
     ```shell
     # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    gatsby new blog https://github.com/heriswn/gatsby-and-tailwind-css.git
     ```
 
 2.  **Start developing.**
@@ -23,7 +23,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd blog/
     npm run develop
     ```
 
