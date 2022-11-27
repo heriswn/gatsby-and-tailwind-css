@@ -44,10 +44,10 @@ const IndexPage = () => {
                   alt="Heri Setiawan"
                   className="relative z-10 mx-auto max-w-full"
                 />
-                <span className="absolute bottom-20 left-1/2 -translate-x-1/3 md:scale-125">
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                   <svg
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     viewBox="0 0 200 200"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -173,10 +173,7 @@ const IndexPage = () => {
       {/* About Section End */}
 
       {/* Portfolio Section Start */}
-      <section
-        id="portfolio"
-        className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
-      >
+      <section id="portfolio" className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
@@ -295,10 +292,7 @@ const IndexPage = () => {
       {/* Portfolio Section End */}
 
       {/* Clients Section Start */}
-      <section
-        id="clients"
-        className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300"
-      >
+      <section id="clients" className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">

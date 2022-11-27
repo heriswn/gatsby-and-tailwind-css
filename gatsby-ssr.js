@@ -1,7 +1,7 @@
 const React = require("react");
 
 exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
-  setHtmlAttributes({ lang: `en`, className: `scroll-smooth` });
+  setHtmlAttributes({ lang: `en` });
   setHeadComponents([
     <script
       dangerouslySetInnerHTML={{
