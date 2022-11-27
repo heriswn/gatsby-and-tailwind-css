@@ -10,7 +10,7 @@ const IndexPage = () => {
       <Header />
       {/* Hero Section Start */}
       <section id="home" className="pt-36 dark:bg-dark">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="flex flex-wrap">
             <div className="w-full  self-center px-4 lg:w-1/2">
               <h1 className="text-base font-semibold text-primary">
@@ -66,7 +66,7 @@ const IndexPage = () => {
 
       {/* About Section Start */}
       <section id="about" className="pt-36 pb-32 dark:bg-dark">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="flex flex-wrap">
             <div className="mb-10 w-full px-4 lg:w-1/2">
               <h4 className="mb-3 text-lg font-bold uppercase text-primary">
@@ -176,7 +176,7 @@ const IndexPage = () => {
         id="portfolio"
         className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
       >
-        <div className="container">
+        <div className="container mx-auto">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
               <h4 className="mb-2 text-lg font-semibold text-primary">
@@ -298,7 +298,7 @@ const IndexPage = () => {
         id="clients"
         className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300"
       >
-        <div className="container">
+        <div className="container mx-auto">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 text-center">
               <h4 className="mb-2 text-lg font-semibold text-primary">
@@ -365,7 +365,7 @@ const IndexPage = () => {
 
       {/* Blog Section Start */}
       <section id="blog" className="bg-slate-100 pt-36 pb-32 dark:bg-dark">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
               <h4 className="mb-2 text-lg font-semibold text-primary">Blog</h4>
@@ -456,7 +456,7 @@ const IndexPage = () => {
 
       {/* Contact Section Start */}
       <section id="contact" className="pt-36 pb-32 dark:bg-slate-800">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
               <h4 className="mb-2 text-lg font-semibold text-primary ">

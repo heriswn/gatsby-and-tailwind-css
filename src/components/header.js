@@ -3,20 +3,6 @@ import React, {useEffect} from "react";
 
 const Header = () => {
   useEffect(()=>{
-    // Back to top
-    // window.onscroll = function () {
-    //   const toTop = document.querySelector("#to-top");
-    //   const fixedNav = toTop.offsetTop;
-
-    //   if (window.pageYOffset > fixedNav) {
-    //     toTop.classList.remove("hidden");
-    //     toTop.classList.add("flex");
-    //   } else {
-    //     toTop.classList.remove("flex");
-    //     toTop.classList.add("hidden");
-    //   }
-    // };
-
     // hamburger
     const hamburger = document.querySelector("#hamburger");
     const navMenu = document.querySelector("#nav-menu");
