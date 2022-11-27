@@ -173,7 +173,10 @@ const IndexPage = () => {
       {/* About Section End */}
 
       {/* Portfolio Section Start */}
-      <section id="portfolio" className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+      <section
+        id="portfolio"
+        className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
+      >
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
@@ -292,10 +295,13 @@ const IndexPage = () => {
       {/* Portfolio Section End */}
 
       {/* Clients Section Start */}
-      <section id="clients" className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+      <section
+        id="clients"
+        className="bg-slate-800 pt-36 pb-32 dark:bg-slate-300"
+      >
         <div className="container">
           <div className="w-full px-4">
-            <div className="mx-auto mb-16 max-w-xl text-center">
+            <div className="mx-auto mb-16 text-center">
               <h4 className="mb-2 text-lg font-semibold text-primary">
                 Clients
               </h4>
@@ -307,45 +313,51 @@ const IndexPage = () => {
                 reprehenderit occaecat nostrud id ex ex.
               </p>
             </div>
-
-            <div className="w-full px-4">
-              <div className="flex flex-wrap items-center justify-center">
-                <a href="https://herisetiawan.vercel.app">
-                  <StaticImage
-                    src="../images/clients/google.svg"
-                    alt="google"
-                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-                  />
-                </a>
-                <a href="https://herisetiawan.vercel.app">
-                  <StaticImage
-                    src="../images/clients/gojek.svg"
-                    alt="gojek"
-                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-                  />
-                </a>
-                <a href="https://herisetiawan.vercel.app">
-                  <StaticImage
-                    src="../images/clients/gtv.svg"
-                    alt="gtv"
-                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-                  />
-                </a>
-                <a href="https://herisetiawan.vercel.app">
-                  <StaticImage
-                    src="../images/clients/sctv.svg"
-                    alt="sctv"
-                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-                  />
-                </a>
-                <a href="https://herisetiawan.vercel.app">
-                  <StaticImage
-                    src="../images/clients/tokopedia.svg"
-                    alt="tokopedia"
-                    className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-                  />
-                </a>
-              </div>
+          </div>
+          <div className="w-full px-4">
+            <div className="flex flex-wrap items-center justify-center">
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage src="../images/clients/google.svg" alt="google" />
+              </a>
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage src="../images/clients/gojek.svg" alt="gojek" />
+              </a>
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage src="../images/clients/gtv.svg" alt="gtv" />
+              </a>
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage src="../images/clients/sctv.svg" alt="sctv" />
+              </a>
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage
+                  src="../images/clients/tokopedia.svg"
+                  alt="tokopedia"
+                />
+              </a>
+              <a
+                href="https://herisetiawan.vercel.app"
+                className="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              >
+                <StaticImage
+                  src="../images/clients/traveloka.svg"
+                  alt="traveloka"
+                />
+              </a>
             </div>
           </div>
         </div>
