@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Backtotop from "../components/backtotop";
 
 const IndexPage = () => {
   return (
@@ -475,7 +474,6 @@ const IndexPage = () => {
       </section>
       {/* Contact Section End */}
       <Footer />
-      <Backtotop />
     </main>
   );
 }

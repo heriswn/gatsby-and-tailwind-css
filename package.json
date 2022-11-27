@@ -16,7 +16,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
-  "license": "0BSD",
+  "license": "MIT",
   "dependencies": {
     "gatsby": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
